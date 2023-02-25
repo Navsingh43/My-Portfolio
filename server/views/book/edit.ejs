@@ -1,0 +1,47 @@
+<%- include ../partials/header.ejs %>
+
+<!-- Loaded main_nav.ejs template -->
+<%- include ../partials/main_nav.ejs %>
+
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %>
+            </h1>
+        <form class="form" method="Post">
+            <div class="form-group">
+                <label for="nameTextField">Book Title</label>
+                <input type="text" name="name" class="form-control" id="nameTextField" placeholder="Enter the Book's Title" required>
+
+            </div>
+            <div class="form-group">
+                <label for="authorTextField">Author</label>
+                <input type="text" name="author" class="form-control" id="nameTextField" placeholder="Enter the Book's Author" required>
+
+            </div>
+            <div class="form-group">
+                <label for="publishedTextField">Published</label>
+                <input type="text" name="published" class="form-control" id="nameTextField" placeholder="Enter the Book's year of publication" required>
+
+            </div>
+            <div class="form-group">
+                <label for="desciptionTextField">Description</label>
+                <input type="text" name="description" class="form-control" id="nameTextField" placeholder="Enter the Book's Description" required>
+
+            </div>
+            <div class="form-group">
+                <label for="priceTextField">Price</label>
+                <input type="text" name="price" class="form-control" id="nameTextField" placeholder="Enter the Book's price" required>
+
+            </div><br>
+            <button class="btn btn-primary" type="submit">
+                <i class="fas fa-edit"></i>Submit
+                 </button>
+                 <a class="btn btn-warning" href="/book-list">
+                     <i class="fas fa-undo"></i>Cancel</a>
+                
+        </form>
+        </div>
+    </div>
+</div>
+<%- include ../partials/bottom_nav.ejs %>
